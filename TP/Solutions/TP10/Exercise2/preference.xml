@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="pref_title"
+        android:title="The title of Preferences"
+        android:summary="Enter the title"
+        android:defaultValue=""/>
+
+
+
+    <ListPreference
+        android:key="pref_lock_screen"
+        android:title="Lock Screen"
+        android:summary="Select the Screen Lock mode"
+        android:entries="@array/lock_screen_options"
+        android:entryValues="@array/lock_screen_values"
+        android:defaultValue="none"/>
+    <CheckBoxPreference
+        android:key="pref_activate_language"
+        android:title="Activate Language"
+        android:summary="Click to activate Language"
+        android:defaultValue="false"/>
+
+    <MultiSelectListPreference
+        android:key="pref_language"
+        android:title="Language"
+        android:summary="Click to select the language"
+        android:entries="@array/language_screen_options"
+        android:entryValues="@array/language_screen_values"
+        android:enabled="false"/>
+
+</PreferenceScreen>

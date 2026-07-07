@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/HideMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide Me"
+            android:layout_marginStart="8dp"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/Hide"
+            android:onClick="hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide" />
+        <Button
+            android:id="@+id/Show"
+            android:onClick="show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show" />
+    </TableRow>
+<TableRow
+    android:id="@+id/row2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/DisableMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Disable Me"
+            android:layout_span="2"
+            android:backgroundTint="#2196F3"
+            />
+
+        <Button
+            android:id="@+id/Disable"
+            android:onClick="disable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disable" />
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF0000" />
+
+
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Colorme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color me"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/Green"
+            android:onClick="green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/row4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/Reset"
+            android:onClick="reset"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Reset"
+            android:layout_column="2"
+            />
+    </TableRow>
+    <TableRow
+        android:id="@+id/row5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/Close"
+            android:onClick="close"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Close"
+            android:layout_column="1"
+            />
+    </TableRow>
+
+
+</TableLayout>

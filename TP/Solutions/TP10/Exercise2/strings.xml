@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Workspace</string>
+    <string-array name="lock_screen_options">
+        <item>PIN</item>
+        <item>Password</item>
+        <item>Pattern</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="lock_screen_values">
+        <item>pin</item>
+        <item>password</item>
+        <item>pattern</item>
+        <item>none</item>
+    </string-array>
+
+    <string-array name="language_screen_options">
+        <item>English</item>
+        <item>French</item>
+        <item>Arabic</item>
+    </string-array>
+
+    <string-array name="language_screen_values">
+        <item>English</item>
+        <item>French</item>
+        <item>Arabic</item>
+    </string-array>
+</resources>

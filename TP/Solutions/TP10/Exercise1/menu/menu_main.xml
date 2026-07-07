@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/selectPreference"
+        android:title="Select Preferences"
+        />
+    <item
+        android:id="@+id/title"
+        android:title="Delete Preferences"
+        />
+</menu>

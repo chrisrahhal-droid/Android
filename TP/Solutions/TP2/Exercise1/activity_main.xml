@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp">
+
+    <!-- First number input -->
+    <EditText
+        android:id="@+id/Value1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="a"
+        android:inputType="numberDecimal" />
+
+    <!-- Plus sign -->
+    <TextView
+        android:id="@+id/PlusSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="24sp"
+        android:layout_toEndOf="@id/Value1"
+        android:layout_marginStart="8dp"
+        android:layout_alignBaseline="@id/Value1" />
+
+    <!-- Second number input -->
+    <EditText
+        android:id="@+id/Value2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="b"
+        android:inputType="numberDecimal"
+        android:layout_toEndOf="@id/PlusSign"
+        android:layout_marginStart="8dp"
+        android:layout_alignBaseline="@id/Value1" />
+
+    <!-- Equals sign -->
+    <TextView
+        android:id="@+id/EqualsSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="24sp"
+        android:layout_toEndOf="@id/Value2"
+        android:layout_marginStart="8dp"
+        android:layout_alignBaseline="@id/Value1" />
+
+    <!-- Result display -->
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="result"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/EqualsSign"
+        android:layout_marginStart="8dp"
+        android:layout_alignBaseline="@id/Value1" />
+
+    <!-- Show Button -->
+    <Button
+        android:id="@+id/ShowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:onClick="calculate"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/ResetButton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="resetFields"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
